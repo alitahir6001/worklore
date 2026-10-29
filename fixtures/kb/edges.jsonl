@@ -1,0 +1,7 @@
+{"from": "Reporting.usp_RefreshBIDaily", "to": "Reporting.usp_CalcCustomerBI", "type": "calls"}
+{"from": "Reporting.usp_CalcCustomerBI", "to": "Sales.Invoices", "type": "reads"}
+{"from": "Reporting.usp_CalcCustomerBI", "to": "Sales.InvoiceLines", "type": "reads"}
+{"from": "Reporting.usp_CalcCustomerBI", "to": "Sales.Customers", "type": "reads"}
+{"from": "Reporting.usp_CalcCustomerBI", "to": "Reporting.CustomerBISnapshot", "type": "writes"}
+{"from": "Reporting.vw_CustomerBI", "to": "Reporting.CustomerBISnapshot", "type": "reads"}
+{"from": "Integration.usp_ExportBIFeed", "to": "Reporting.vw_CustomerBI", "type": "reads", "dynamic": true}
