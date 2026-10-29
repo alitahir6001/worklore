@@ -1,0 +1,10 @@
+{"id": "Sales.Customers", "schema": "Sales", "name": "Customers", "type": "table", "description": "One row per customer account."}
+{"id": "Sales.Orders", "schema": "Sales", "name": "Orders", "type": "table", "description": "Customer orders and their shipping status."}
+{"id": "Sales.Invoices", "schema": "Sales", "name": "Invoices", "type": "table", "description": "Invoice headers."}
+{"id": "Sales.InvoiceLines", "schema": "Sales", "name": "InvoiceLines", "type": "table", "description": "Invoice line items."}
+{"id": "Warehouse.StockItems", "schema": "Warehouse", "name": "StockItems", "type": "table", "description": "Stock item catalog."}
+{"id": "Reporting.CustomerBISnapshot", "schema": "Reporting", "name": "CustomerBISnapshot", "type": "table", "description": "Nightly snapshot of per-customer BI metrics."}
+{"id": "Reporting.usp_CalcCustomerBI", "schema": "Reporting", "name": "usp_CalcCustomerBI", "type": "procedure", "description": "Calculates per-customer BI metrics."}
+{"id": "Reporting.usp_RefreshBIDaily", "schema": "Reporting", "name": "usp_RefreshBIDaily", "type": "procedure", "description": "Nightly BI refresh entry point."}
+{"id": "Reporting.vw_CustomerBI", "schema": "Reporting", "name": "vw_CustomerBI", "type": "view", "description": "Reporting view over customer BI."}
+{"id": "Integration.usp_ExportBIFeed", "schema": "Integration", "name": "usp_ExportBIFeed", "type": "procedure", "description": "Exports the BI feed to downstream consumers."}
